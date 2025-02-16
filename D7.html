@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Showcase</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: #f0f0f0;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 80%;
+        }
+        .card {
+            width: 20%;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: font-family 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
+            font-size: 16px;
+        }
+        .card:hover {
+            font-family: var(--font);
+            transform: scale(1.1);
+            font-size: 24px;
+        }
+        .card:nth-child(1) { background-color: #ffadad; }
+        .card:nth-child(2) { background-color: #ffd6a5; }
+        .card:nth-child(3) { background-color: #fdffb6; }
+        .card:nth-child(4) { background-color: #caffbf; }
+        .card:nth-child(5) { background-color: #9bf6ff; }
+        .card:nth-child(6) { background-color: #a0c4ff; }
+        .card:nth-child(7) { background-color: #bdb2ff; }
+        .card:nth-child(8) { background-color: #ffc6ff; }
+        .card:nth-child(9) { background-color: #ffb5a7; }
+        .card:nth-child(10) { background-color: #fcd5ce; }
+        .card:nth-child(11) { background-color: #f8ad9d; }
+        .card:nth-child(12) { background-color: #f5c3bc; }
+        .card:nth-child(13) { background-color: #f2a7a5; }
+        .card:nth-child(14) { background-color: #f08a95; }
+    </style>
+</head>
+<body>
+    <div class="header">Header Box Shadow and Font-Family</div>
+    <div class="grid">
+        <div class="card" style="--font: 'Arial';">Arial</div>
+        <div class="card" style="--font: 'Verdana';">Verdana</div>
+        <div class="card" style="--font: 'Times New Roman';">Times New Roman</div>
+        <div class="card" style="--font: 'Courier New';">Courier New</div>
+        <div class="card" style="--font: 'Georgia';">Georgia</div>
+        <div class="card" style="--font: 'Trebuchet MS';">Trebuchet MS</div>
+        <div class="card" style="--font: 'Lucida Console';">Lucida Console</div>
+        <div class="card" style="--font: 'Impact';">Impact</div>
+        <div class="card" style="--font: 'Comic Sans MS';">Comic Sans MS</div>
+        <div class="card" style="--font: 'Palatino Linotype';">Palatino Linotype</div>
+        <div class="card" style="--font: 'Garamond';">Garamond</div>
+        <div class="card" style="--font: 'Tahoma';">Tahoma</div>
+        <div class="card" style="--font: 'Calibri';">Calibri</div>
+        <div class="card" style="--font: 'Futura';">Futura</div>
+    </div>
+</body>
+</html>
